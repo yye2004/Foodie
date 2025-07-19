@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="review.css">
+    <title>Biryani Review</title>
+
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><img src="Foodie.png" alt="logo" width="100" height="30"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="food.html">Food</a>
+                <ul class="submenu">
+                    <li><a href="localfood.html">Local</a></li>
+                    <li><a href="overseafood.html">Oversea</a></li>
+                </ul>
+            </li>
+            <li><a href="recipe.html">Recipe</a>
+                <ul class="submenu">
+                    <li><a href="main_dish.html">Main Dish</a></li>
+                    <li><a href="side_dish.html">Side Dish</a></li>
+                    <li><a href="snack.html">Snack</a></li>
+                    <li><a href="dessert.html">Dessert</a></li>
+                    <li><a href="drink.html">Drink</a></li>
+                    <li><a href="soup.html">Soup</a></li>
+                </ul>
+            </li>
+            <li><a href="sponsor.html">Sponsor</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <div class="rightcorner">
+                <a href="contact.html"><img src="contact.png" alt="Contact Us" width="25" height="25"></a>
+                <a href="login.html"><img src="login.png" alt="Login/Logout" width="25" height="25"></a>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <h1>Biryani Review</h1>
+        <div class="tags">
+            <span>biryani</span>
+            <span>Indian food</span>
+            <span>local cuisine</span>
+            <span>rice dishes</span>
+            <span>traditional food</span>
+            <span>food review</span>
+        </div>
+        <div class="description">
+            Discover the rich flavors and unique ingredients that make Biryani a beloved dish in Indian cuisine.
+        </div>
+
+        <div class="image-row">
+            <img src="briyani1.jpg" alt="Biryani Image 1">
+            <img src="briyani2.jpg" alt="Biryani Image 2">
+            <img src="briyani3.jpg" alt="Biryani Image 3">
+        </div>
+
+        <div id="food" class="review-section">
+            <h2>Food</h2>
+            <p>The Biryani was a culinary delight with fragrant basmati rice, tender pieces of meat, and a rich blend of
+                spices. The layers of flavor were well-developed, and the dish was complemented by a side of cooling
+                raita and a hard-boiled egg. It truly captured the essence of a traditional Indian Biryani.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="cleanliness" class="review-section">
+            <h2>Cleanliness</h2>
+            <p>The cleanliness of the dining area was impeccable. The tables were spotless, the utensils were properly
+                sanitized, and the overall ambiance was neat and orderly, enhancing the overall dining experience.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="ambiance" class="review-section">
+            <h2>Ambiance</h2>
+            <p>The ambiance was vibrant and inviting, with a warm color scheme and traditional Indian decor that set the
+                mood perfectly. The background music and lighting added to the overall experience, making it an
+                enjoyable place to savor the meal.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="price" class="review-section">
+            <h2>Price</h2>
+            <p>The price was reasonable for the quality and portion size of the Biryani. It provided excellent value for
+                the money, making it a great choice for anyone looking to enjoy a high-quality meal without breaking the
+                bank.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div class="comments-section">
+            <h2>Comments</h2>
+            <input id="name-input" type="text" placeholder="Your Name" />
+            <textarea id="comment-input" placeholder="Leave a comment..."></textarea>
+            <button onclick="addComment()">Submit</button>
+            <ul id="comments-list" class="comments-list"></ul>
+        </div>
+
+        <div class="related-posts">
+            <h2>Related Posts</h2>
+            <ul>
+                <li><a href="https://www.blueosa.com/the-top-10-indian-dishes/">Top 10 Indian Dishes to Try</a></li>
+                <li><a href="https://indiacurrents.com/tracing-the-history-of-biryani/">The History of Biryani</a></li>
+                <li><a href="https://www.indianhealthyrecipes.com/chicken-biryani-recipe/">How to Make Biryani at
+                        Home</a></li>
+            </ul>
+        </div>
+
+        <div class="post-info">
+            Posted July 28, 2024
+        </div>
+    </div>
+
+    <div class="back-to-top" onclick="scrollToTop()">Back to Top</div>
+
+    <script src="scriptReview.js"></script>
+</body>
+
+</html>

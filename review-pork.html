@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="review.css">
+    <title>Sweet and Sour Pork Review</title>
+</head>
+
+<header>
+    <nav>
+        <ul>
+            <li><img src="Foodie.png" alt="logo" width="100" height="30"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="food.html">Food</a>
+                <ul class="submenu">
+                    <li><a href="localfood.html">Local</a></li>
+                    <li><a href="overseafood.html">Oversea</a></li>
+                </ul>
+            </li>
+            <li><a href="recipe.html">Recipe</a>
+                <ul class="submenu">
+                    <li><a href="main_dish.html">Main Dish</a></li>
+                    <li><a href="side_dish.html">Side Dish</a></li>
+                    <li><a href="snack.html">Snack</a></li>
+                    <li><a href="dessert.html">Dessert</a></li>
+                    <li><a href="drink.html">Drink</a></li>
+                    <li><a href="soup.html">Soup</a></li>
+                </ul>
+            </li>
+            <li><a href="sponsor.html">Sponsor</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <div class="rightcorner">
+                <a href="contact.html"><img src="contact.png" alt="Contact Us" width="25" height="25"></a>
+                <a href="login.html"><img src="login.png" alt="Login/Logout" width="25" height="25"></a>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <h1>Sweet and Sour Pork Review</h1>
+        <div class="tags">
+            <span>sweet and sour pork</span>
+            <span>Chinese food</span>
+            <span>main course</span>
+            <span>pork dishes</span>
+            <span>Asian cuisine</span>
+            <span>food review</span>
+        </div>
+        <div class="description">
+            Experience the tangy and flavorful profile of Sweet and Sour Pork, a popular dish in Chinese cuisine.
+        </div>
+
+        <div class="image-row">
+            <img src="pork1.jpeg" alt="Sweet and Sour Pork Image 1">
+            <img src="pork2.jpg" alt="Sweet and Sour Pork Image 2">
+            <img src="pork3.jpg" alt="Sweet and Sour Pork Image 3">
+        </div>
+
+        <div id="food" class="review-section">
+            <h2>Food</h2>
+            <p>The Sweet and Sour Pork was a delightful mix of tender pork pieces coated in a tangy and slightly sweet
+                sauce. The balance between the sweet and sour flavors was perfectly executed, and the dish was
+                complemented by crunchy bell peppers and pineapple chunks.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="cleanliness" class="review-section">
+            <h2>Cleanliness</h2>
+            <p>The cleanliness of the dining area was impressive. The surfaces were spotless, and the kitchen area
+                appeared well-organized, ensuring a hygienic dining environment.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="ambiance" class="review-section">
+            <h2>Ambiance</h2>
+            <p>The ambiance was lively and inviting, featuring vibrant Chinese decor that added to the dining
+                experience. The seating was comfortable, and the atmosphere was enhanced by soft, traditional music.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="price" class="review-section">
+            <h2>Price</h2>
+            <p>The price was reasonable for the quality of the dish. The portion size was generous, making it a great
+                value for money and suitable for both solo diners and groups.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐</span></p>
+        </div>
+
+
+        <div class="comments-section">
+            <h2>Comments</h2>
+            <input id="name-input" type="text" placeholder="Your Name" />
+            <textarea id="comment-input" placeholder="Leave a comment..."></textarea>
+            <button onclick="addComment()">Submit</button>
+            <ul id="comments-list" class="comments-list"></ul>
+        </div>
+
+        <div class="related-posts">
+            <h2>Related Posts</h2>
+            <ul>
+                <li><a href="https://www.hotelmousai.com/blog/dining/the-10-most-popular-dishes-in-china/">Top 10 Chinese Dishes to Try</a></li>
+                <li><a href="https://www.scmp.com/lifestyle/food-drink/article/1118279/legends-sweet-and-sour-pork">The Origins of Sweet and Sour Pork</a></li>
+                <li><a href="https://www.theguardian.com/food/2019/feb/05/how-to-cook-perfect-sweet-sour-pork-felicity-cloake">How to Cook Perfect Sweet and Sour Pork at Home</a></li>
+            </ul>
+        </div>
+
+        <div class="post-info">
+            Posted July 28, 2024 
+        </div>
+    </div>
+
+    <div class="back-to-top" onclick="scrollToTop()">Back to Top</div>
+
+    <script src="scriptReview.js"></script>
+
+</body>
+
+</html>

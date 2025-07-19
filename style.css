@@ -1,0 +1,693 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.2; 
+    z-index: -1; 
+}
+
+header {
+    background-color: rgba(51, 51, 51, 1); 
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+/*nav bar styling*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 0px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 35px;
+    display: block;
+    transition: background-color 0.5s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul .submenu {
+    font-size: small;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul .submenu li {
+    margin-right: 0;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+nav ul .rightcorner {
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+nav ul .rightcorner a{
+    padding: 0px 15px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+nav ul .rightcorner a:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2); 
+}
+
+/*index content styling*/
+.content {
+    padding: 0px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content h1{
+    text-align:center;
+    opacity:0;
+    animation: fadeIn 3s forwards;
+    margin-top: 30px;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/*footer styling*/
+footer {
+    margin-top: auto;
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia a {
+    display: inline-block;
+    margin: 0 10px; 
+    vertical-align: middle;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.socialmedia a:hover {
+    transform: scale(1.3); 
+    filter: brightness(1.2); 
+}
+
+.socialmedia img {
+    display: block; 
+}
+
+.contactus {
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.contactus p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.contactus a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.contactus a:hover {
+    text-decoration: underline;
+}
+
+/*recipe.html stylings*/
+.recipemain {
+    display: flex;
+    padding: 20px;
+    gap: 20px; /* Add space between left and right frames */
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #ddd; /* Frame around the left section */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.85); /* Background color inside the frame */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Change font to Gill Sans */
+}
+
+.left ul.recipe-types {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left ul.recipe-types li {
+    margin: 10px 0;
+}
+
+.left ul.recipe-types li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    border: 2px solid #ddd; /* Frame around each recipe type */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 1); /* Background color inside the frame */
+    transition: background-color 0.3s;
+}
+
+.left ul.recipe-types li a:hover {
+    background-color: #fcee4e; /* Highlight background on hover */
+    text-decoration: underline;
+}
+
+.right {
+    flex: 3;
+    padding: 20px;
+    border: 2px solid #ddd; /* Frame around the right section */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.85); /* Background color inside the frame */
+}
+
+.right h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Set font type for the heading */
+    font-size: 2.2em; /* Set font size */
+    color: #333; /* Set text color */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.right img.food-image {
+    display: block;
+    margin: 0 auto 20px; /* Center the image and add space below */
+    width: 300px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+.recipe-photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.recipe-item {
+    flex: 1 1 calc(50% - 20px); /* Make each item take up half the available width */
+    max-width: calc(50% - 20px); /* Ensure each item doesn't grow beyond half the available width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: center;
+    border: 2px solid #ddd; /* Frame around each recipe item */
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Background color inside the frame */
+    transition: transform 0.3s;
+}
+
+.recipe-item:hover {
+    background-color: #fcee4e; /* Highlight background on hover */
+    transform: scale(1.05);
+}
+
+.recipe-photos img {
+    width: 100%; /* Make image take full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    border-radius: 5px;
+}
+
+.recipe-photos p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #333;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Change font to Comic Sans MS */
+    font-weight: bold; /* Make the text bold */
+}
+
+.food-list {
+    margin-top: 20px;
+}
+
+.food-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd; /* Frame around each food item */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.85); /* Background color inside the frame */
+    overflow: hidden; /* Prevent content from overflowing */
+    transition: background-color 0.3s;
+}
+
+.food-item a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+    display: flex; /* Flexbox for alignment */
+    width: 100%; /* Ensure link covers the full width of the food item */
+}
+
+.food-item:hover {
+    background-color: #fcee4e; /* Highlight background on hover */
+    transform: scale(1.05);
+}
+
+.food-item img {
+    width: 150px; /* Set the width for the food images */
+    height: 150px; /* Set the height for the food images */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.food-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.food-details h3 {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Change font to Comic Sans MS */
+    font-size: 1.5em;
+    color: #333333;
+    margin: 0;
+}
+
+.food-details h4 {
+    font-family: 'Arial', sans-serif; /* Change font to Comic Sans MS */
+    font-size: 1em;
+    color: #333333;
+    margin: 0;
+}
+
+.food-details p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    color: #666666;
+    margin: 0;
+}
+
+.food-ingredients, .food-steps, .food-allergies {
+    margin-bottom: 20px;
+}
+
+.food-ingredients h3, .food-steps h3 {
+    font-size: 1.8em;
+    color: #333;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Set font type */
+    margin-bottom: 10px;
+}
+
+.food-allergies h3 {
+    font-size: 1.2em;
+    color: #333;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Set font type */
+    margin-bottom: 10px;
+}
+
+.food-ingredients ul, .food-steps ol {
+    font-size: 1.1em;
+    color: #666;
+    font-family: 'Arial', sans-serif;
+    padding-left: 20px;
+}
+
+.food-ingredients ul li, .food-steps ol li {
+    margin-bottom: 10px;
+}
+
+.food-allergies {
+    border: 3px solid #ddd; /* Frame around the allergies section */
+    border-radius: 5px;
+    padding: 1px 10px;
+    background-color: rgba(255, 255, 255, 0.85); /* Background color inside the frame */
+}
+
+.food-allergies p {
+    font-size: 0.9em;
+    color: #666666;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* Media query to handle smaller screens */
+@media (max-width: 768px) {
+    .recipe-item {
+        flex: 1 1 100%; /* Make each item take full width on small screens */
+        max-width: 100%;
+    }
+
+    .food-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .food-item img {
+        width: 50%; /* Make image take full width on small screens */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 10px;
+    }
+
+    .food-details {
+        text-align: center; /* Center text for better appearance on small screens */
+    }
+
+    .food-details h3 {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+
+    .food-details p {
+        font-size: 0.9em; /* Adjust font size for smaller screens */
+    }
+}
+
+/*login and contact us form styling*/
+.loginmain, .contactmain {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logincontainer, .formcontainer {
+    background-color: #fff;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logincontainer h1, .formcontainer h1 {
+    margin-top: 10px;
+    color: #333;
+    font-size: 24px;
+}
+
+.logincontainer label, .formcontainer label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 16px;
+}
+
+.logincontainer input[type="text"],
+.logincontainer input[type="password"],
+.logincontainer input[type="email"],
+.formcontainer input[type="text"],
+.formcontainer input[type="tel"],
+.formcontainer input[type="email"],
+.formcontainer select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.formcontainer textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    resize: none; /* Prevent resizing */
+}
+
+.logincontainer input[type="submit"], .formcontainer input[type="submit"] {
+    background-color: #555555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.logincontainer input[type="submit"]:hover, .formcontainer input[type="submit"]:hover {
+    background-color: #202020;
+}
+
+.logincontainer a {
+    display: block;
+    margin-top: 10px;
+    color: #555555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logincontainer a:hover {
+    color: #202020;
+    text-decoration: underline;
+}
+
+.logincontainer .toggle-btn {
+    background: none;
+    border: none;
+    color: #555555;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logincontainer .toggle-btn:hover {
+    color: #001d6d;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #aaa; 
+    font-style: italic;
+}
+
+.success-message {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.success-message h1 {
+    color: #28a745;
+}
+
+.error-message {
+    margin-bottom: 2px;
+    text-align: start;
+    font-size: small;
+    color: #dc3545;
+}
+
+/*index recipe styling*/
+.index-recipe-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    margin: 20px auto;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    max-width: 800px;
+    opacity: 0;
+    animation: fadeInCard 3s forwards;
+}
+
+@keyframes fadeInCard {
+    to {
+        opacity: 1;
+    }
+}
+
+.index-recipe-card img {
+    flex-basis: 50%;
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: cover;
+}
+
+.index-recipe-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.index-recipe-info {
+    flex-basis: 50%;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.index-recipe-info h2 {
+    margin: 20px 10px 20px 20px;
+}
+
+.index-recipe-info p {
+    margin: 0 0 20px 20px;
+    font-size: 16px;
+}
+
+.index-recipe-info button {
+    margin: 20px 20px 20px 20px;
+    padding: 10px 20px ;
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.7s ease, color 0.5s ease;
+}
+
+.index-recipe-info button:hover {
+    background-color: #ffffff;
+    color:#000000;
+}
+
+/*index featured products styling*/
+.indexproducts {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if screen is too small */
+    justify-content: center; /* Centers the content */
+    gap: 20px; /* Space between cards */
+    margin: 20px 0;
+}
+
+.index-product-card {
+    position: relative;
+    width: 300px; /* Adjust to match your .index-recipe-card width */
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.index-product-card:hover {
+    transform: translateY(-10px);
+}
+
+.index-product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.index-product-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6); /* Darker overlay for text visibility */
+    color: white;
+    text-align: left;
+}
+
+.index-product-info h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.index-product-info p {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.overlay-button {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    padding: 8px 16px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.7s ease, color 0.5s ease;
+}
+
+.overlay-button:hover {
+    background-color: #000000;
+    color:#ffffff;
+}

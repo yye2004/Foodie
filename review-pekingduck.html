@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="review.css">
+    <title>Peking Duck Review</title>
+</head>
+
+<header>
+    <nav>
+        <ul>
+            <li><img src="Foodie.png" alt="logo" width="100" height="30"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="food.html">Food</a>
+                <ul class="submenu">
+                    <li><a href="localfood.html">Local</a></li>
+                    <li><a href="overseafood.html">Oversea</a></li>
+                </ul>
+            </li>
+            <li><a href="recipe.html">Recipe</a>
+                <ul class="submenu">
+                    <li><a href="main_dish.html">Main Dish</a></li>
+                    <li><a href="side_dish.html">Side Dish</a></li>
+                    <li><a href="snack.html">Snack</a></li>
+                    <li><a href="dessert.html">Dessert</a></li>
+                    <li><a href="drink.html">Drink</a></li>
+                    <li><a href="soup.html">Soup</a></li>
+                </ul>
+            </li>
+            <li><a href="sponsor.html">Sponsor</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <div class="rightcorner">
+                <a href="contact.html"><img src="contact.png" alt="Contact Us" width="25" height="25"></a>
+                <a href="login.html"><img src="login.png" alt="Login/Logout" width="25" height="25"></a>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <h1>Peking Duck Review</h1>
+        <div class="tags">
+            <span>peking duck</span>
+            <span>Chinese food</span>
+            <span>local cuisine</span>
+            <span>duck dishes</span>
+            <span>traditional food</span>
+            <span>food review</span>
+        </div>
+        <div class="description">
+            Experience the crispy skin and succulent meat of Peking Duck, a classic dish in Chinese cuisine.
+        </div>
+
+        <div class="image-row">
+            <img src="duck1.jpg" alt="Peking Duck Image 1">
+            <img src="duck2.jpg" alt="Peking Duck Image 2">
+            <img src="duck3.jpg" alt="Peking Duck Image 3">
+        </div>
+
+        <div id="food" class="review-section">
+            <h2>Food</h2>
+            <p>The Peking Duck was perfectly roasted with a crispy skin and tender, juicy meat. The duck was served with
+                traditional pancakes, hoisin sauce, and sliced scallions, providing a delightful combination of flavors
+                and textures.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="cleanliness" class="review-section">
+            <h2>Cleanliness</h2>
+            <p>The cleanliness of the dining area was exceptional. The tables and utensils were spotless, and the
+                overall environment was well-maintained, enhancing the dining experience.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="ambiance" class="review-section">
+            <h2>Ambiance</h2>
+            <p>The ambiance was elegant and sophisticated, reflecting the rich heritage of Chinese dining. The decor and
+                lighting created a warm and inviting atmosphere that complemented the high-quality food.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="price" class="review-section">
+            <h2>Price</h2>
+            <p>The price was reasonable given the quality and presentation of the dish. It offered excellent value,
+                making it a worthwhile choice for anyone looking to enjoy a classic Chinese meal.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div class="comments-section">
+            <h2>Comments</h2>
+            <input id="name-input" type="text" placeholder="Your Name" />
+            <textarea id="comment-input" placeholder="Leave a comment..."></textarea>
+            <button onclick="addComment()">Submit</button>
+            <ul id="comments-list" class="comments-list"></ul>
+        </div>
+
+        <div class="related-posts">
+            <h2>Related Posts</h2>
+            <ul>
+                <li><a href="https://www.chinahighlights.com/travelguide/chinese-food/eight-chinese-dishes.htm">Top 10 Chinese Dishes to Try</a></li>
+                <li><a href="https://zandypekingduck.com/2024/01/15/the-history-of-peking-duck/">The History of Peking Duck</a></li>
+                <li><a href="https://redhousespice.com/peking-duck/">How to Make Peking Duck at Home</a></li>
+            </ul>
+        </div>
+
+        <div class="post-info">
+            Posted July 28, 2024 
+        </div>
+    </div>
+
+    <div class="back-to-top" onclick="scrollToTop()">Back to Top</div>
+
+    <script src="scriptReview.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="head.png" type="image/x-icon"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="Foodie.png" alt="logo" width="100" height="30"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="food.html">Food</a>
+                    <ul class="submenu">
+                        <li><a href="localfood.html">Local</a></li>
+                        <li><a href="overseafood.html">Oversea</a></li>
+                    </ul>
+                </li>
+                <li><a href="recipe.html">Recipe</a></li>
+                <li><a href="sponsor.html">Sponsor</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <div class="rightcorner">
+                    <a href="contact.html"><img src="contact.png" alt="Contact Us" width="25" height="25"></a>
+                    <a href="login.html"><img src="login.png" alt="Login/Logout" width="25" height="25"></a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contactmain" id="contact-main">
+        <div class="formcontainer" id="formContainer">
+            <h1>&#129472 Contact Us &#129480</h1>
+            <form id="contactForm" method="GET">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <div id="nameError" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="01234567890">
+                    <div id="phoneError" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example123@gmail.com">
+                    <div id="emailError" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="enquiry">Enquiry Type:</label>
+                    <select id="enquiry" name="enquiry">
+                        <option value="">Select...</option>
+                        <option value="food">Food Recommendations</option>
+                        <option value="sponsorship">Sponsorship</option>
+                        <option value="others">Others</option>
+                    </select>
+                    <div id="enquiryError" class="error-message"></div>
+                </div>
+                <div class="form-group full-width">
+                    <label for="details">Enquiry Details:</label>
+                    <textarea id="details" name="details" rows="4" placeholder="leave your comment here :)"></textarea>
+                    <div id="detailsError" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="submitted" value="Submit">
+                </div>
+            </form>
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="socialmedia">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="facebook.png" alt="Facebook" width="30" height="30">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                    <img src="twitter.png" alt="Twitter" width="30" height="30">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img src="instagram.png" alt="Instagram" width="30" height="30">
+                </a>
+            </div>
+            <div class="contactus">
+                <p><a href="contact.html">Contact us &#128233;</a> | &copy; 2024 Foodie. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contactus.js"></script>
+</body>
+</html>

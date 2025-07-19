@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="review.css">
+    <title>Hainanese Chicken Rice Review</title>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><img src="Foodie.png" alt="logo" width="100" height="30"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="food.html">Food</a>
+                <ul class="submenu">
+                    <li><a href="localfood.html">Local</a></li>
+                    <li><a href="overseafood.html">Oversea</a></li>
+                </ul>
+            </li>
+            <li><a href="recipe.html">Recipe</a>
+                <ul class="submenu">
+                    <li><a href="main_dish.html">Main Dish</a></li>
+                    <li><a href="side_dish.html">Side Dish</a></li>
+                    <li><a href="snack.html">Snack</a></li>
+                    <li><a href="dessert.html">Dessert</a></li>
+                    <li><a href="drink.html">Drink</a></li>
+                    <li><a href="soup.html">Soup</a></li>
+                </ul>
+            </li>
+            <li><a href="sponsor.html">Sponsor</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <div class="rightcorner">
+                <a href="contact.html"><img src="contact.png" alt="Contact Us" width="25" height="25"></a>
+                <a href="login.html"><img src="login.png" alt="Login/Logout" width="25" height="25"></a>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <h1>Hainanese Chicken Rice Review</h1>
+        <div class="tags">
+            <span>Hainanese Chicken Rice</span>
+            <span>Singaporean food</span>
+            <span>local cuisine</span>
+            <span>chicken dishes</span>
+            <span>traditional food</span>
+            <span>food review</span>
+        </div>
+        <div class="description">
+            Explore the classic flavors and delicate preparation that make Hainanese Chicken Rice a staple in
+            Singaporean cuisine.
+        </div>
+
+        <div class="image-row">
+            <img src="chickenrice1.jpg" alt="Hainanese Chicken Rice Image 1">
+            <img src="chickenrice2.jpg" alt="Hainanese Chicken Rice Image 2">
+            <img src="chickenrice3.jpg" alt="Hainanese Chicken Rice Image 3">
+        </div>
+
+        <div id="food" class="review-section">
+            <h2>Food</h2>
+            <p>The Hainanese Chicken Rice was exceptional with tender, flavorful chicken served over aromatic rice. The
+                accompanying sauces—ginger, chili, and soy—added layers of taste that complemented the dish perfectly.
+                The rice was cooked to perfection, with a subtle richness from the chicken broth.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="cleanliness" class="review-section">
+            <h2>Cleanliness</h2>
+            <p>The cleanliness of the dining area was excellent. The tables and utensils were spotless, and the entire
+                environment was well-maintained, ensuring a comfortable and hygienic dining experience.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="ambiance" class="review-section">
+            <h2>Ambiance</h2>
+            <p>The ambiance was calm and inviting, with a simple yet elegant decor that reflected the essence of
+                traditional Singaporean dining. The atmosphere was relaxed, making it a pleasant place to enjoy a
+                comforting meal.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="price" class="review-section">
+            <h2>Price</h2>
+            <p>The price was very reasonable for the quality and portion size of the meal. It offered excellent value
+                for money, making it an accessible choice for those who appreciate authentic and satisfying food.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div class="comments-section">
+            <h2>Comments</h2>
+            <input id="name-input" type="text" placeholder="Your Name" />
+            <textarea id="comment-input" placeholder="Leave a comment..."></textarea>
+            <button onclick="addComment()">Submit</button>
+            <ul id="comments-list" class="comments-list"></ul>
+        </div>
+
+        <div class="related-posts">
+            <h2>Related Posts</h2>
+            <ul>
+                <li><a href="https://www.expatica.com/sg/about/culture/singapore-food-2172810/">Top 10 Singaporean Dishes to Try</a></li>
+                <li><a href="https://medium.com/kitchen-tales/where-does-hainanese-chicken-rice-come-from-11e5dafc0a2a">The Story Behind Hainanese Chicken Rice</a></li>
+                <li><a href="https://www.singaporeanmalaysianrecipes.com/hainanese-chicken-rice-recipe/">How to Make Hainanese Chicken Rice at Home</a></li>
+            </ul>
+        </div>
+
+        <div class="post-info">
+            Posted July 28, 2024 
+        </div>
+    </div>
+
+    <div class="back-to-top" onclick="scrollToTop()">Back to Top</div>
+
+    <script src="scriptReview.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="review.css">
+    <title>Satay Review</title>
+</head>
+
+<header>
+    <nav>
+        <ul>
+            <li><img src="Foodie.png" alt="logo" width="100" height="30"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="food.html">Food</a>
+                <ul class="submenu">
+                    <li><a href="localfood.html">Local</a></li>
+                    <li><a href="overseafood.html">Oversea</a></li>
+                </ul>
+            </li>
+            <li><a href="recipe.html">Recipe</a>
+                <ul class="submenu">
+                    <li><a href="main_dish.html">Main Dish</a></li>
+                    <li><a href="side_dish.html">Side Dish</a></li>
+                    <li><a href="snack.html">Snack</a></li>
+                    <li><a href="dessert.html">Dessert</a></li>
+                    <li><a href="drink.html">Drink</a></li>
+                    <li><a href="soup.html">Soup</a></li>
+                </ul>
+            </li>
+            <li><a href="sponsor.html">Sponsor</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <div class="rightcorner">
+                <a href="contact.html"><img src="contact.png" alt="Contact Us" width="25" height="25"></a>
+                <a href="login.html"><img src="login.png" alt="Login/Logout" width="25" height="25"></a>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <h1>Satay Review</h1>
+        <div class="tags">
+            <span>satay</span>
+            <span>Malaysian food</span>
+            <span>local cuisine</span>
+            <span>grilled meat</span>
+            <span>street food</span>
+            <span>food review</span>
+        </div>
+        <div class="description">
+            Explore the mouthwatering flavors and unique characteristics of Satay, a popular street food in Malaysian
+            cuisine.
+        </div>
+
+        <div class="image-row">
+            <img src="satay1.jpg" alt="Satay Image 1">
+            <img src="satay2.jpg" alt="Satay Image 2">
+            <img src="satay3.jpg" alt="Satay Image 3">
+        </div>
+
+        <div id="food" class="review-section">
+            <h2>Food</h2>
+            <p>The Satay was a delightful treat with perfectly grilled meat, tender and juicy with a smoky flavor. The
+                peanut sauce was rich and flavorful, enhancing the overall taste experience. The accompanying cucumber
+                and onion were fresh, adding a crisp contrast to the savory meat.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="cleanliness" class="review-section">
+            <h2>Cleanliness</h2>
+            <p>The cleanliness was satisfactory, with the skewers and utensils being clean and well-maintained. The food
+                preparation area was tidy, which contributed to a positive dining experience.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="ambiance" class="review-section">
+            <h2>Ambiance</h2>
+            <p>The ambiance was casual and inviting, with a lively street food vibe. The setting was perfect for
+                enjoying a quick yet satisfying meal, with a friendly and energetic atmosphere that enhanced the
+                enjoyment of the food.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="price" class="review-section">
+            <h2>Price</h2>
+            <p>The price was very reasonable for the quality and portion size of the Satay. It offered great value for
+                money, making it an excellent choice for both casual diners and food enthusiasts looking for a delicious
+                and affordable treat.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div class="comments-section">
+            <h2>Comments</h2>
+            <input id="name-input" type="text" placeholder="Your Name" />
+            <textarea id="comment-input" placeholder="Leave a comment..."></textarea>
+            <button onclick="addComment()">Submit</button>
+            <ul id="comments-list" class="comments-list"></ul>
+        </div>
+
+        <div class="related-posts">
+            <h2>Related Posts</h2>
+            <ul>
+                <li><a href="https://www.vietravel.com/en/food-discovery/10-dishes-that-define-malaysian-cuisine-v11605.aspx">Top 10 Malaysian Dishes to Try</a></li>
+                <li><a href="https://www.nisabakrigourmet.com/collections/satay-history">The History of Satay</a></li>
+                <li><a href="https://www.kitchensanctuary.com/easy-satay-sauce-recipe/">How to Make Satay at Home</a></li>
+            </ul>
+        </div>
+
+        <div class="post-info">
+            Posted July 28, 2024 
+        </div>
+    </div>
+
+    <div class="back-to-top" onclick="scrollToTop()">Back to Top</div>
+    <script src="scriptReview.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="review.css">
+    <title>Pizza Review</title>
+</head>
+
+<header>
+    <nav>
+        <ul>
+            <li><img src="Foodie.png" alt="logo" width="100" height="30"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="food.html">Food</a>
+                <ul class="submenu">
+                    <li><a href="localfood.html">Local</a></li>
+                    <li><a href="overseafood.html">Oversea</a></li>
+                </ul>
+            </li>
+            <li><a href="recipe.html">Recipe</a>
+                <ul class="submenu">
+                    <li><a href="main_dish.html">Main Dish</a></li>
+                    <li><a href="side_dish.html">Side Dish</a></li>
+                    <li><a href="snack.html">Snack</a></li>
+                    <li><a href="dessert.html">Dessert</a></li>
+                    <li><a href="drink.html">Drink</a></li>
+                    <li><a href="soup.html">Soup</a></li>
+                </ul>
+            </li>
+            <li><a href="sponsor.html">Sponsor</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <div class="rightcorner">
+                <a href="contact.html"><img src="contact.png" alt="Contact Us" width="25" height="25"></a>
+                <a href="login.html"><img src="login.png" alt="Login/Logout" width="25" height="25"></a>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <h1>Pizza Review</h1>
+        <div class="tags">
+            <span>pizza</span>
+            <span>Italian food</span>
+            <span>local cuisine</span>
+            <span>cheese dishes</span>
+            <span>traditional food</span>
+            <span>food review</span>
+        </div>
+        <div class="description">
+            Experience the delicious flavors and variety of toppings that make pizza a favorite dish worldwide.
+        </div>
+
+        <div class="image-row">
+            <img src="pizza1.jpg" alt="Pizza Image 1">
+            <img src="pizza2.jpg" alt="Pizza Image 2">
+            <img src="pizza3.jpg" alt="Pizza Image 3">
+        </div>
+
+        <div id="food" class="review-section">
+            <h2>Food</h2>
+            <p>The pizza had a perfectly crispy crust with a delicious combination of fresh ingredients. The tomato
+                sauce was rich and flavorful, complemented by gooey mozzarella cheese and a variety of savory toppings.
+                Each bite was a delight, making it a standout pizza experience.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="cleanliness" class="review-section">
+            <h2>Cleanliness</h2>
+            <p>The cleanliness of the restaurant was impressive. The tables and dining area were spotless, and the
+                kitchen was visible, showing an organized and hygienic environment. This attention to cleanliness
+                enhanced the overall dining experience.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="ambiance" class="review-section">
+            <h2>Ambiance</h2>
+            <p>The ambiance of the pizzeria was cozy and inviting, with a rustic Italian decor that set the perfect mood
+                for enjoying pizza. The warm lighting and comfortable seating created a relaxed atmosphere, ideal for
+                both casual and special occasions.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="price" class="review-section">
+            <h2>Price</h2>
+            <p>The prices were reasonable for the quality and portion size of the pizza. It offered good value for
+                money, making it an accessible choice for pizza lovers of all budgets.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div class="comments-section">
+            <h2>Comments</h2>
+            <input id="name-input" type="text" placeholder="Your Name" />
+            <textarea id="comment-input" placeholder="Leave a comment..."></textarea>
+            <button onclick="addComment()">Submit</button>
+            <ul id="comments-list" class="comments-list"></ul>
+        </div>
+
+        <div class="related-posts">
+            <h2>Related Posts</h2>
+            <ul>
+                <li><a
+                        href="https://arteflame.com/blogs/recipes/top-10-pizza-toppings-discover-the-best-choices-for-delicious-pizzas">Top
+                        10 Pizza Toppings to Try</a></li>
+                <li><a href="https://www.history.com/news/a-slice-of-history-pizza-through-the-ages">The History of
+                        Pizza</a></li>
+                <li><a href="https://sugarspunrun.com/the-best-pizza-dough-recipe/">How to Make Pizza Dough at Home</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="post-info">
+            Posted July 28, 2024 
+        </div>
+    </div>
+
+    <div class="back-to-top" onclick="scrollToTop()">Back to Top</div>
+
+    <script src="scriptReview.js"></script>
+</body>
+
+</html>

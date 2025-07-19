@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="review.css">
+    <title>Ramen Review</title>
+
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><img src="Foodie.png" alt="logo" width="100" height="30"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="food.html">Food</a>
+                <ul class="submenu">
+                    <li><a href="localfood.html">Local</a></li>
+                    <li><a href="overseafood.html">Oversea</a></li>
+                </ul>
+            </li>
+            <li><a href="recipe.html">Recipe</a>
+                <ul class="submenu">
+                    <li><a href="main_dish.html">Main Dish</a></li>
+                    <li><a href="side_dish.html">Side Dish</a></li>
+                    <li><a href="snack.html">Snack</a></li>
+                    <li><a href="dessert.html">Dessert</a></li>
+                    <li><a href="drink.html">Drink</a></li>
+                    <li><a href="soup.html">Soup</a></li>
+                </ul>
+            </li>
+            <li><a href="sponsor.html">Sponsor</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <div class="rightcorner">
+                <a href="contact.html"><img src="contact.png" alt="Contact Us" width="25" height="25"></a>
+                <a href="login.html"><img src="login.png" alt="Login/Logout" width="25" height="25"></a>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <h1>Ramen Review</h1>
+        <div class="tags">
+            <span>ramen</span>
+            <span>Japanese food</span>
+            <span>local cuisine</span>
+            <span>noodle dishes</span>
+            <span>traditional food</span>
+            <span>food review</span>
+        </div>
+        <div class="description">
+            Explore the savory depths of Ramen and discover what makes it a staple of Japanese cuisine.
+        </div>
+
+        <div class="image-row">
+            <img src="ramen1.jpg" alt="Ramen Image 1">
+            <img src="ramen2.jpg" alt="Ramen Image 2">
+            <img src="ramen3.jpg" alt="Ramen Image 3">
+        </div>
+
+        <div id="food" class="review-section">
+            <h2>Food</h2>
+            <p>The Ramen was delicious, featuring rich, umami-packed broth, perfectly cooked noodles, and a variety of
+                fresh toppings including tender pork slices, a perfectly boiled egg, and crispy nori. The balance of
+                flavors was exceptional, and it delivered an authentic Japanese ramen experience.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="cleanliness" class="review-section">
+            <h2>Cleanliness</h2>
+            <p>The restaurant maintained high standards of cleanliness. The dining area was spotless, with clean tables
+                and well-kept utensils, contributing to a comfortable and hygienic dining experience.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="ambiance" class="review-section">
+            <h2>Ambiance</h2>
+            <p>The ambiance was inviting, with a cozy, casual setting that featured traditional Japanese decor. The
+                atmosphere was relaxed, making it a great spot to enjoy a bowl of ramen in a comfortable environment.
+            </p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="price" class="review-section">
+            <h2>Price</h2>
+            <p>The price was reasonable for the quality and portion size of the ramen. It provided excellent value for
+                money, offering a satisfying meal at an affordable price point.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div class="comments-section">
+            <h2>Comments</h2>
+            <input id="name-input" type="text" placeholder="Your Name" />
+            <textarea id="comment-input" placeholder="Leave a comment..."></textarea>
+            <button onclick="addComment()">Submit</button>
+            <ul id="comments-list" class="comments-list"></ul>
+        </div>
+
+        <div class="related-posts">
+            <h2>Related Posts</h2>
+            <ul>
+                <li><a href="https://www.bokksu.com/blogs/news/popular-japanese-foods">Top 10 Japanese Dishes to Try</a></li>
+                <li><a href="https://www.ramenyokocho.com/ramenhistory">The History of Ramen</a></li>
+                <li><a href="https://therecipecritic.com/easy-homemade-ramen/">How to Make Ramen at Home</a></li>
+            </ul>
+        </div>
+
+        <div class="post-info">
+            Posted July 28, 2024
+        </div>
+    </div>
+
+    <div class="back-to-top" onclick="scrollToTop()">Back to Top</div>
+
+    <script src="scriptReview.js"></script>
+
+</body>
+
+</html>
+</body>
+
+</html>

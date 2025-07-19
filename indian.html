@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="demolocals.css">
+
+    <title>Chinese Cuisine - Food Blog</title>
+</head>
+
+<header>
+    <nav>
+        <ul>
+            <li><img src="Foodie.png" alt="logo" width="100" height="30"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="food.html">Food</a>
+                <ul class="submenu">
+                    <li><a href="localfood.html">Local</a></li>
+                    <li><a href="overseafood.html">Oversea</a></li>
+                </ul>
+            </li>
+            <li><a href="recipe.html">Recipe</a>
+                <ul class="submenu">
+                    <li><a href="main_dish.html">Main Dish</a></li>
+                    <li><a href="side_dish.html">Side Dish</a></li>
+                    <li><a href="snack.html">Snack</a></li>
+                    <li><a href="dessert.html">Dessert</a></li>
+                    <li><a href="drink.html">Drink</a></li>
+                    <li><a href="soup.html">Soup</a></li>
+                </ul>
+            </li>
+            <li><a href="sponsor.html">Sponsor</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <div class="rightcorner">
+                <a href="contact.html"><img src="contact.png" alt="Contact" width="25" height="25"></a>
+                <a href="login.html"><img src="login.png" alt="Login/Logout" width="25" height="25"></a>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <h1>Indian Cuisine</h1>
+        <div class="card">
+            <h2>Roti Canai</h2>
+            <img src="img/roticanai.jpg" alt="Roti Canai">
+            <div class="rating">Rating: 4.1 <span class="stars">★★★★☆</span></div>
+            <p>MYR 8 - MYR 12</p>
+            <p>Description: Flaky flatbread often served with dhal (lentil curry) or other side dishes, a staple in
+                Indian cuisine.</p>
+            <p>Address: 321 Flatbread Avenue, Kuala Lumpur</p>
+            <a href="https://maps.google.com?q=321 Flatbread Avenue, Kuala Lumpur" target="_blank">View on Google
+                Maps</a>
+            <div class="actions">
+                <button class="like-btn" id="like-roti-canai">👍 <span id="like-count-roti-canai">98</span>
+                    Like</button>
+                <button class="comment-btn" onclick="openModal('roti-canai')">💬 Comments</button>
+                <div class="social-share">
+                    <a href="#" onclick="shareToSocial('facebook', 'Roti Canai')"><img
+                            src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Share on Facebook"></a>
+                    <a href="#" onclick="shareToSocial('twitter', 'Roti Canai')"><img
+                            src="https://img.icons8.com/color/48/000000/twitter.png" alt="Share on Twitter"></a>
+                    <a href="#" onclick="shareToSocial('whatsapp', 'Roti Canai')"><img
+                            src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="Share on WhatsApp"></a>
+                    <a href="https://www.instagram.com/your-profile" target="_blank"><img
+                            src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Share on Instagram"></a>
+                </div>
+            </div>
+            <button class="read-more">READ MORE</button>
+        </div>
+
+        <div id="modal-roti-canai" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('roti-canai')">&times;</span>
+                <h3>Comments for Roti Canai</h3>
+                <form class="comment-form" data-card-id="roti-canai">
+                    <textarea placeholder="Add a comment..."></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <ul class="comments-list" id="comments-roti-canai"></ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Nasi Kandar</h2>
+            <img src="img/nasikandar.jpg" alt="Nasi Kandar">
+            <div class="rating">Rating: 4.5 <span class="stars">★★★★★</span></div>
+            <p>MYR 12 - MYR 18</p>
+            <p>Description: Rice served with a variety of curries and side dishes, a versatile and satisfying meal.</p>
+            <p>Address: 654 Curry Lane, Penang</p>
+            <a href="https://maps.google.com?q=654 Curry Lane, Penang" target="_blank">View on Google Maps</a>
+            <div class="actions">
+                <button class="like-btn" id="like-nasi-kandar">👍 <span id="like-count-nasi-kandar">122</span>
+                    Like</button>
+                <button class="comment-btn" onclick="openModal('nasi-kandar')">💬 Comments</button>
+                <div class="social-share">
+                    <a href="#" onclick="shareToSocial('facebook', 'Nasi Kandar')"><img
+                            src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Share on Facebook"></a>
+                    <a href="#" onclick="shareToSocial('twitter', 'Nasi Kandar')"><img
+                            src="https://img.icons8.com/color/48/000000/twitter.png" alt="Share on Twitter"></a>
+                    <a href="#" onclick="shareToSocial('whatsapp', 'Nasi Kandar')"><img
+                            src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="Share on WhatsApp"></a>
+                    <a href="https://www.instagram.com/your-profile" target="_blank"><img
+                            src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Share on Instagram"></a>
+                </div>
+            </div>
+            <button class="read-more">READ MORE</button>
+        </div>
+
+        <div id="modal-nasi-kandar" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('nasi-kandar')">&times;</span>
+                <h3>Comments for Nasi Kandar</h3>
+                <form class="comment-form" data-card-id="nasi-kandar">
+                    <textarea placeholder="Add a comment..."></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <ul class="comments-list" id="comments-nasi-kandar"></ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Murtabak</h2>
+            <img src="img/murtabak.jpg" alt="Murtabak">
+            <div class="rating">Rating: 4.3 <span class="stars">★★★★☆</span></div>
+            <p>MYR 15 - MYR 20</p>
+            <p>Description: Stuffed and pan-fried flatbread filled with meat, onions, and spices, a hearty and flavorful
+                dish.</p>
+            <p>Address: 987 Flatbread Street, Johor Bahru</p>
+            <a href="https://maps.google.com?q=987 Flatbread Street, Johor Bahru" target="_blank">View on Google
+                Maps</a>
+            <div class="actions">
+                <button class="like-btn" id="like-murtabak">👍 <span id="like-count-murtabak">115</span> Like</button>
+                <button class="comment-btn" onclick="openModal('murtabak')">💬 Comments</button>
+                <div class="social-share">
+                    <a href="#" onclick="shareToSocial('facebook', 'Murtabak')"><img
+                            src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Share on Facebook"></a>
+                    <a href="#" onclick="shareToSocial('twitter', 'Murtabak')"><img
+                            src="https://img.icons8.com/color/48/000000/twitter.png" alt="Share on Twitter"></a>
+                    <a href="#" onclick="shareToSocial('whatsapp', 'Murtabak')"><img
+                            src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="Share on WhatsApp"></a>
+                    <a href="https://www.instagram.com/your-profile" target="_blank"><img
+                            src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Share on Instagram"></a>
+                </div>
+            </div>
+            <button class="read-more">READ MORE</button>
+        </div>
+
+        <div id="modal-murtabak" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('murtabak')">&times;</span>
+                <h3>Comments for Murtabak</h3>
+                <form class="comment-form" data-card-id="murtabak">
+                    <textarea placeholder="Add a comment..."></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <ul class="comments-list" id="comments-murtabak"></ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Function to open a modal
+        function openModal(cardId) {
+            document.getElementById(`modal-${cardId}`).style.display = 'block';
+        }
+
+        // Function to close a modal
+        function closeModal(cardId) {
+            document.getElementById(`modal-${cardId}`).style.display = 'none';
+        }
+
+        // Add event listeners for all comment forms
+        document.querySelectorAll('.comment-form').forEach(form => {
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const cardId = form.getAttribute('data-card-id');
+                const textarea = form.querySelector('textarea');
+                const comment = textarea.value.trim();
+
+                if (comment) {
+                    const commentsList = document.getElementById(`comments-${cardId}`);
+                    const newComment = document.createElement('li');
+                    newComment.textContent = comment;
+                    commentsList.appendChild(newComment);
+
+                    textarea.value = ''; // Clear textarea after submission
+                }
+            });
+        });
+
+        // Add event listeners for all like buttons
+        document.querySelectorAll('.like-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const likeCountSpan = this.querySelector('span');
+                let likeCount = parseInt(likeCountSpan.textContent);
+                likeCountSpan.textContent = likeCount + 1;
+            });
+        });
+
+        // Function to share to social media
+        function shareToSocial(platform, dishName) {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent(`Check out this delicious ${dishName}!`);
+            let shareUrl = '';
+
+            switch (platform) {
+                case 'facebook':
+                    shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${text}`;
+                    break;
+                case 'twitter':
+                    shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+                    break;
+                case 'whatsapp':
+                    shareUrl = `https://wa.me/?text=${text} ${url}`;
+                    break;
+                case 'instagram':
+                    shareUrl = `https://www.instagram.com/your-profile`; // Placeholder URL
+                    break;
+            }
+
+            window.open(shareUrl, '_blank');
+        }
+
+        // Placeholder function for Instagram sharing
+        function shareToInstagram() {
+            alert("Instagram sharing is not directly supported. Please visit our Instagram profile to share.");
+        }
+
+        // Close modal if clicked outside of modal-content
+        window.onclick = function (event) {
+            if (event.target.classList.contains('modal')) {
+                closeModal(event.target.id.split('-')[1]);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

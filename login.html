@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign Up Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="Foodie.png" alt="logo" width="100" height="30"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="food.html">Food</a>
+                    <ul class="submenu">
+                        <li><a href="localfood.html">Local</a></li>
+                        <li><a href="overseafood.html">Oversea</a></li>
+                    </ul>
+                </li>
+                <li><a href="recipe.html">Recipe</a>
+                    <ul class="submenu">
+                        <li><a href="main_dish.html">Main Dish</a>
+                        <li><a href="side_dish.html">Side Dish</a>
+                        <li><a href="snack.html">Snack</a>
+                        <li><a href="dessert.html">Dessert</a>
+                        <li><a href="drink.html">Drink</a>
+                        <li><a href="soup.html">Soup</a>
+                    </ul>
+                </li>
+                <li><a href="sponsor.html">Sponsor</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <div class="rightcorner">
+                    <a href="contact.html"><img src="contact.png" alt="Contact Us" width="25" height="25"></a>
+                    <a href="login.html"><img src="login.png" alt="Login/Logout" width="25" height="25"></a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="loginmain" id="login-main">
+        <div class="logincontainer" id="login-container">
+            <h1>&#128274; Login &#128275;</h1>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <input type="submit" value="Login">
+            </form>
+            <a href="#" onclick="showForgotPasswordForm()">Forgot password?</a>
+            <button class="toggle-btn" onclick="toggleForm()">Don't have an account? Sign Up</button>
+        </div>
+
+        <div class="logincontainer" id="signup-container" style="display: none;">
+            <h1>Sign Up</h1>
+            <form id="signup-form">
+                <label for="new-username">Username:</label>
+                <input type="text" id="new-username" name="new-username" required>
+                <label for="new-email">Email:</label>
+                <input type="email" id="new-email" name="new-email" required>
+                <label for="new-password">Password:</label>
+                <input type="password" id="new-password" name="new-password" required>
+                <input type="submit" value="Sign Up">
+            </form>
+            <button class="toggle-btn" onclick="toggleForm()">Already have an account? Login</button>
+        </div>
+
+        <div class="logincontainer" id="forgot-password-container" style="display: none;">
+            <h1>Forgot Password</h1>
+            <form id="forgot-password-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <input type="submit" value="Reset Password">
+            </form>
+            <button class="toggle-btn" onclick="toggleForm()">Back to Login</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="socialmedia">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="facebook.png" alt="Facebook" width="30" height="30">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                    <img src="twitter.png" alt="Twitter" width="30" height="30">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img src="instagram.png" alt="Instagram" width="30" height="30">
+                </a>
+            </div>
+            <div class="contactus">
+                <p><a href="contact.html">Contact us &#128233;</a> | &copy; 2024 Foodie. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

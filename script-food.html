@@ -1,0 +1,31 @@
+
+let liked = {};
+
+function toggleLike(id) {
+    const likeButton = document.getElementById(`like-button-${id}`);
+    const likeCount = document.getElementById(`like-count-${id}`);
+    const count = parseInt(likeCount.innerText);
+
+    if (liked[id]) {
+        likeCount.innerText = count - 1;
+        likeButton.classList.remove('liked');
+        liked[id] = false;
+    } else {
+        likeCount.innerText = count + 1;
+        likeButton.classList.add('liked');
+        liked[id] = true;
+    }
+}
+
+function postComment() {
+    const commentInput = document.getElementById('modal-comment-input');
+    const commentText = commentInput.value.trim();
+
+    if (commentText) {
+        const commentItem = document.createElement('div');
+        commentItem.innerText = commentText;
+        document.querySelector('.comment-list').appendChild(commentItem);
+        commentInput.value = '';
+        $('#commentModal').modal('hide');
+    }
+}

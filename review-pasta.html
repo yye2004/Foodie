@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="review.css">
+    <title>Pasta Review</title>
+</head>
+
+<header>
+    <nav>
+        <ul>
+            <li><img src="Foodie.png" alt="logo" width="100" height="30"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="food.html">Food</a>
+                <ul class="submenu">
+                    <li><a href="localfood.html">Local</a></li>
+                    <li><a href="overseafood.html">Oversea</a></li>
+                </ul>
+            </li>
+            <li><a href="recipe.html">Recipe</a>
+                <ul class="submenu">
+                    <li><a href="main_dish.html">Main Dish</a></li>
+                    <li><a href="side_dish.html">Side Dish</a></li>
+                    <li><a href="snack.html">Snack</a></li>
+                    <li><a href="dessert.html">Dessert</a></li>
+                    <li><a href="drink.html">Drink</a></li>
+                    <li><a href="soup.html">Soup</a></li>
+                </ul>
+            </li>
+            <li><a href="sponsor.html">Sponsor</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <div class="rightcorner">
+                <a href="contact.html"><img src="contact.png" alt="Contact Us" width="25" height="25"></a>
+                <a href="login.html"><img src="login.png" alt="Login/Logout" width="25" height="25"></a>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <h1>Pasta Review</h1>
+        <div class="tags">
+            <span>pasta</span>
+            <span>Italian food</span>
+            <span>main course</span>
+            <span>comfort food</span>
+            <span>food review</span>
+        </div>
+        <div class="description">
+            Discover the rich flavors and variety of pasta dishes that make Italian cuisine a favorite around the world.
+        </div>
+
+        <div class="image-row">
+            <img src="pasta1.jpg" alt="Pasta Image 1">
+            <img src="pasta2.jpg" alt="Pasta Image 2">
+            <img src="pasta3.jpg" alt="Pasta Image 3">
+        </div>
+
+        <div id="food" class="review-section">
+            <h2>Food</h2>
+            <p>The pasta was expertly cooked, with a rich, savory sauce and perfectly seasoned ingredients. The balance
+                of flavors and textures made it a standout dish, showcasing the essence of traditional Italian cuisine.
+            </p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="cleanliness" class="review-section">
+            <h2>Cleanliness</h2>
+            <p>The dining area was impeccably clean, with spotless tables and utensils. The overall environment was
+                well-maintained, contributing to an enjoyable dining experience.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="ambiance" class="review-section">
+            <h2>Ambiance</h2>
+            <p>The ambiance was warm and inviting, with a cozy atmosphere that perfectly complemented the meal. The
+                decor was tastefully arranged to enhance the dining experience.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="price" class="review-section">
+            <h2>Price</h2>
+            <p>The price was reasonable for the high quality and generous portions provided. It offered good value for
+                money, making it an excellent choice for pasta lovers.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div class="comments-section">
+            <h2>Comments</h2>
+            <input id="name-input" type="text" placeholder="Your Name" />
+            <textarea id="comment-input" placeholder="Leave a comment..."></textarea>
+            <button onclick="addComment()">Submit</button>
+            <ul id="comments-list" class="comments-list"></ul>
+        </div>
+
+        <div class="related-posts">
+            <h2>Related Posts</h2>
+            <ul>
+                <li><a href="https://www.bbcgoodfood.com/howto/guide/top-10-most-popular-pasta-recipes">Top 10 Pasta Dishes to Try</a></li>
+                <li><a href="https://sharethepasta.org/pasta-101/pasta-iq/history-of-pasta/">The History of Pasta</a></li>
+                <li><a href="https://www.loveandlemons.com/homemade-pasta-recipe/">How to Make Pasta at Home</a></li>
+            </ul>
+        </div>
+
+        <div class="post-info">
+            Posted July 28, 2024 
+        </div>
+    </div>
+
+    <div class="back-to-top" onclick="scrollToTop()">Back to Top</div>
+
+    <script src="scriptReview.js"></script>
+</body>
+
+</html>

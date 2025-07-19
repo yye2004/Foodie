@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="demolocals.css">
+    <title>Malay Cuisine - Food Blog</title>
+</head>
+
+<header>
+    <nav>
+        <ul>
+            <li><img src="Foodie.png" alt="logo" width="100" height="30"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="food.html">Food</a>
+                <ul class="submenu">
+                    <li><a href="localfood.html">Local</a></li>
+                    <li><a href="overseafood.html">Oversea</a></li>
+                </ul>
+            </li>
+            <li><a href="recipe.html">Recipe</a>
+                <ul class="submenu">
+                    <li><a href="main_dish.html">Main Dish</a></li>
+                    <li><a href="side_dish.html">Side Dish</a></li>
+                    <li><a href="snack.html">Snack</a></li>
+                    <li><a href="dessert.html">Dessert</a></li>
+                    <li><a href="drink.html">Drink</a></li>
+                    <li><a href="soup.html">Soup</a></li>
+                </ul>
+            </li>
+            <li><a href="sponsor.html">Sponsor</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <div class="rightcorner">
+                <a href="contact.html"><img src="contact.png" alt="Contact" width="25" height="25"></a>
+                <a href="login.html"><img src="login.png" alt="Login/Logout" width="25" height="25"></a>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <!-- Dish 1: Nasi Lemak -->
+        <div class="card">
+            <h2>Nasi Lemak</h2>
+            <img src='img/nasi_lemak.jpg' alt="Nasi Lemak">
+            <div class="rating">Rating: 4.67 <span class="stars">★★★★★</span></div>
+            <p>MYR 10 - MYR 15</p>
+            <p>Description: Coconut milk rice served with sambal, fried crispy anchovies, peanuts, boiled egg, and cucumber.</p>
+            <p>Address: 123 Coconut Avenue, Kuala Lumpur</p>
+            <a href="https://maps.google.com?q=123 Coconut Avenue, Kuala Lumpur" target="_blank">View on Google Maps</a>
+            <div class="actions">
+                <button class="like-btn" id="like-nasi-lemak">👍 <span id="like-count-nasi-lemak">110</span> Like</button>
+                <button class="comment-btn" onclick="openModal('nasi-lemak')">💬 Comments</button>
+                <div class="social-share">
+                    <a href="#" onclick="shareToSocial('facebook', 'Nasi Lemak')"><img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Share on Facebook"></a>
+                    <a href="#" onclick="shareToSocial('twitter', 'Nasi Lemak')"><img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Share on Twitter"></a>
+                    <a href="#" onclick="shareToSocial('whatsapp', 'Nasi Lemak')"><img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="Share on WhatsApp"></a>
+                    <a href="https://www.instagram.com/your-profile" target="_blank"><img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Share on Instagram"></a>
+                </div>
+            </div>
+            <a href="reviewnasi.html" target="_blank" class="read-more">READ MORE</a>
+        </div>
+
+        <!-- Dish 2: Rendang -->
+        <div class="card">
+            <h2>Rendang</h2>
+            <img src='img/rendang.jpg' alt="Rendang">
+            <div class="rating">Rating: 4.83 <span class="stars">★★★★★</span></div>
+            <p>MYR 10 - MYR 15</p>
+            <p>Description: Slow-cooked spicy beef or chicken stew, rich and flavorful.</p>
+            <p>Address: 456 Stew Street, Penang</p>
+            <a href="https://maps.google.com?q=456 Stew Street, Penang" target="_blank">View on Google Maps</a>
+            <div class="actions">
+                <button class="like-btn" id="like-rendang">👍 <span id="like-count-rendang">110</span> Like</button>
+                <button class="comment-btn" onclick="openModal('rendang')">💬 Comments</button>
+                <div class="social-share">
+                    <a href="#" onclick="shareToSocial('facebook', 'Rendang')"><img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Share on Facebook"></a>
+                    <a href="#" onclick="shareToSocial('twitter', 'Rendang')"><img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Share on Twitter"></a>
+                    <a href="#" onclick="shareToSocial('whatsapp', 'Rendang')"><img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="Share on WhatsApp"></a>
+                    <a href="https://www.instagram.com/your-profile" target="_blank"><img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Share on Instagram"></a>
+                </div>
+            </div>
+            <a href="reviewrendang.html" target="_blank" class="read-more">READ MORE</a>
+        </div>
+
+        <!-- Dish 3: Satay -->
+        <div class="card">
+            <h2>Satay</h2>
+            <img src='img/satay.jpg' alt="Satay">
+            <div class="rating">Rating: 4.92 <span class="stars">★★★★★</span></div>
+            <p>MYR 10 - MYR 15</p>
+            <p>Description: Skewered and grilled meat served with a delicious peanut sauce.</p>
+            <p>Address: 789 Skewer Lane, Johor Bahru</p>
+            <a href="https://maps.google.com?q=789 Skewer Lane, Johor Bahru" target="_blank">View on Google Maps</a>
+            <div class="actions">
+                <button class="like-btn" id="like-satay">👍 <span id="like-count-satay">110</span> Like</button>
+                <button class="comment-btn" onclick="openModal('satay')">💬 Comments</button>
+                <div class="social-share">
+                    <a href="#" onclick="shareToSocial('facebook', 'Satay')"><img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Share on Facebook"></a>
+                    <a href="#" onclick="shareToSocial('twitter', 'Satay')"><img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Share on Twitter"></a>
+                    <a href="#" onclick="shareToSocial('whatsapp', 'Satay')"><img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="Share on WhatsApp"></a>
+                    <a href="https://www.instagram.com/your-profile" target="_blank"><img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Share on Instagram"></a>
+                </div>
+            </div>
+            <a href="reviewsatay.html" target="_blank" class="read-more">READ MORE</a>
+        </div>
+
+        <!-- Add more dish cards here as needed -->
+    </div>
+
+    <!-- Modals for comments (same as before) -->
+    <div id="modal-nasi-lemak" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('nasi-lemak')">&times;</span>
+            <h3>Comments for Nasi Lemak</h3>
+            <form class="comment-form" data-card-id="nasi-lemak">
+                <textarea placeholder="Add a comment..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <ul class="comments-list" id="comments-nasi-lemak"></ul>
+        </div>
+    </div>
+
+    <div id="modal-rendang" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('rendang')">&times;</span>
+            <h3>Comments for Rendang</h3>
+            <form class="comment-form" data-card-id="rendang">
+                <textarea placeholder="Add a comment..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <ul class="comments-list" id="comments-rendang"></ul>
+        </div>
+    </div>
+
+    <div id="modal-satay" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('satay')">&times;</span>
+            <h3>Comments for Satay</h3>
+            <form class="comment-form" data-card-id="satay">
+                <textarea placeholder="Add a comment..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <ul class="comments-list" id="comments-satay"></ul>
+        </div>
+    </div>
+
+    <script>
+        // Function to open a modal
+        function openModal(cardId) {
+            document.getElementById(`modal-${cardId}`).style.display = 'block';
+        }
+
+        // Function to close a modal
+        function closeModal(cardId) {
+            document.getElementById(`modal-${cardId}`).style.display = 'none';
+        }
+
+        // Function to open a new tab for "READ MORE"
+        function openReadMore(dishId) {
+            const urls = {
+                'nasi-lemak': 'https://example.com/nasi-lemak', // Replace with your URL
+                'rendang': 'https://example.com/rendang',       // Replace with your URL
+                'satay': 'https://example.com/satay'            // Replace with your URL
+            };
+            window.open(urls[dishId], '_blank');
+        }
+
+        // Add event listeners for all comment forms
+        document.querySelectorAll('.comment-form').forEach(form => {
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const cardId = form.getAttribute('data-card-id');
+                const textarea = form.querySelector('textarea');
+                const comment = textarea.value.trim();
+
+                if (comment) {
+                    const commentsList = document.getElementById(`comments-${cardId}`);
+                    const newComment = document.createElement('li');
+                    newComment.textContent = comment;
+                    commentsList.appendChild(newComment);
+
+                    textarea.value = ''; // Clear textarea after submission
+                }
+            });
+        });
+
+        // Add event listeners for all like buttons
+        document.querySelectorAll('.like-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const likeCountSpan = this.querySelector('span');
+                let likeCount = parseInt(likeCountSpan.textContent);
+                likeCountSpan.textContent = likeCount + 1;
+            });
+        });
+
+        // Function to share to social media
+        function shareToSocial(platform, dishName) {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent(`Check out this delicious ${dishName}!`);
+            let shareUrl = '';
+
+            switch (platform) {
+                case 'facebook':
+                    shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${text}`;
+                    break;
+                case 'twitter':
+                    shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+                    break;
+                case 'whatsapp':
+                    shareUrl = `https://wa.me/?text=${text} ${url}`;
+                    break;
+                case 'instagram':
+                    shareUrl = `https://www.instagram.com/your-profile`; // Placeholder URL
+                    break;
+            }
+
+            window.open(shareUrl, '_blank');
+        }
+
+        // Placeholder function for Instagram sharing
+        function shareToInstagram() {
+            alert("Instagram sharing is not directly supported. Please visit our Instagram profile to share.");
+        }
+
+        // Close modal if clicked outside of modal-content
+        window.onclick = function (event) {
+            if (event.target.classList.contains('modal')) {
+                closeModal(event.target.id.split('-')[1]);
+            }
+        }
+    </script>
+</body>
+
+</html>

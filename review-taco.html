@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="review.css">
+    <title>Taco Review</title>
+</head>
+
+<header>
+    <nav>
+        <ul>
+            <li><img src="Foodie.png" alt="logo" width="100" height="30"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="food.html">Food</a>
+                <ul class="submenu">
+                    <li><a href="localfood.html">Local</a></li>
+                    <li><a href="overseafood.html">Oversea</a></li>
+                </ul>
+            </li>
+            <li><a href="recipe.html">Recipe</a>
+                <ul class="submenu">
+                    <li><a href="main_dish.html">Main Dish</a></li>
+                    <li><a href="side_dish.html">Side Dish</a></li>
+                    <li><a href="snack.html">Snack</a></li>
+                    <li><a href="dessert.html">Dessert</a></li>
+                    <li><a href="drink.html">Drink</a></li>
+                    <li><a href="soup.html">Soup</a></li>
+                </ul>
+            </li>
+            <li><a href="sponsor.html">Sponsor</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <div class="rightcorner">
+                <a href="contact.html"><img src="contact.png" alt="Contact Us" width="25" height="25"></a>
+                <a href="login.html"><img src="login.png" alt="Login/Logout" width="25" height="25"></a>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <h1>Taco Review</h1>
+        <div class="tags">
+            <span>taco</span>
+            <span>Mexican food</span>
+            <span>local cuisine</span>
+            <span>street food</span>
+            <span>traditional food</span>
+            <span>food review</span>
+        </div>
+        <div class="description">
+            Explore the vibrant flavors and textures that make tacos a popular choice in Mexican cuisine.
+        </div>
+
+        <div class="image-row">
+            <img src="taco1.jpg" alt="Taco Image 1">
+            <img src="taco2.jpg" alt="Taco Image 2">
+            <img src="taco3.jpg" alt="Taco Image 3">
+        </div>
+
+        <div id="food" class="review-section">
+            <h2>Food</h2>
+            <p>The tacos were delicious, featuring a perfect blend of seasoned meat, fresh vegetables, and tangy salsa.
+                The tortillas were soft and warm, providing a great base for the well-balanced fillings. Overall, the
+                tacos delivered an authentic Mexican taste.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="cleanliness" class="review-section">
+            <h2>Cleanliness</h2>
+            <p>The cleanliness of the taco stand was impeccable. The service area was well-organized, and all utensils
+                and surfaces were kept clean. This attention to cleanliness contributed to a pleasant dining experience.
+            </p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="ambiance" class="review-section">
+            <h2>Ambiance</h2>
+            <p>The ambiance of the taco stand was lively and inviting, with colorful decor that reflected Mexican
+                culture. The casual setting made it a great spot for enjoying tacos with friends or family.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="price" class="review-section">
+            <h2>Price</h2>
+            <p>The price was very reasonable considering the quality of the tacos. Each taco offered great value for
+                money, making it an affordable option for a quick and satisfying meal.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div class="comments-section">
+            <h2>Comments</h2>
+            <input id="name-input" type="text" placeholder="Your Name" />
+            <textarea id="comment-input" placeholder="Leave a comment..."></textarea>
+            <button onclick="addComment()">Submit</button>
+            <ul id="comments-list" class="comments-list"></ul>
+        </div>
+
+        <div class="related-posts">
+            <h2>Related Posts</h2>
+            <ul>
+                <li><a href="https://www.bbcgoodfood.com/travel/global/top-10-foods-try-mexico">Top 10 Mexican Dishes to Try</a></li>
+                <li><a href="https://www.smithsonianmag.com/arts-culture/where-did-the-taco-come-from-81228162/">The History of Tacos</a></li>
+                <li><a href="https://www.bettycrocker.com/recipes/easy-beef-tacos/426c261d-b2eb-4e22-9cba-0066f3335591">How to Make Tacos at Home</a></li>
+            </ul>
+        </div>
+
+        <div class="post-info">
+            Posted July 28, 2024 
+        </div>
+    </div>
+
+    <div class="back-to-top" onclick="scrollToTop()">Back to Top</div>
+
+    <script src="scriptReview.js"></script>
+</body>
+
+</html>

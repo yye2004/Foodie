@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="review.css">
+    <title>Nasi Rendang Review</title>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><img src="Foodie.png" alt="logo" width="100" height="30"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="food.html">Food</a>
+                <ul class="submenu">
+                    <li><a href="localfood.html">Local</a></li>
+                    <li><a href="overseafood.html">Oversea</a></li>
+                </ul>
+            </li>
+            <li><a href="recipe.html">Recipe</a>
+                <ul class="submenu">
+                    <li><a href="main_dish.html">Main Dish</a></li>
+                    <li><a href="side_dish.html">Side Dish</a></li>
+                    <li><a href="snack.html">Snack</a></li>
+                    <li><a href="dessert.html">Dessert</a></li>
+                    <li><a href="drink.html">Drink</a></li>
+                    <li><a href="soup.html">Soup</a></li>
+                </ul>
+            </li>
+            <li><a href="sponsor.html">Sponsor</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <div class="rightcorner">
+                <a href="contact.html"><img src="contact.png" alt="Contact Us" width="25" height="25"></a>
+                <a href="login.html"><img src="login.png" alt="Login/Logout" width="25" height="25"></a>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <h1>Nasi Rendang Review</h1>
+        <div class="tags">
+            <span>nasi rendang</span>
+            <span>Malaysian food</span>
+            <span>local cuisine</span>
+            <span>beef dishes</span>
+            <span>traditional food</span>
+            <span>food review</span>
+        </div>
+        <div class="description">
+            Discover the rich, spicy flavors and tender beef that make Nasi Rendang a staple in Malaysian cuisine.
+        </div>
+
+        <div class="image-row">
+            <img src="rendang11.jpg" alt="Nasi Rendang Image 1">
+            <img src="rendang2.jpg" alt="Nasi Rendang Image 2">
+            <img src="rendang3.jpg" alt="Nasi Rendang Image 3">
+        </div>
+
+        <div id="food" class="review-section">
+            <h2>Food</h2>
+            <p>The Nasi Rendang was exceptional, with tender beef slow-cooked in a rich, spicy coconut curry sauce. The
+                flavors were deep and complex, providing a delightful experience with every bite.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="cleanliness" class="review-section">
+            <h2>Cleanliness</h2>
+            <p>The dining area was spotless, with attention to detail in maintaining cleanliness throughout. The
+                environment was fresh and inviting, adding to the overall positive dining experience.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="ambiance" class="review-section">
+            <h2>Ambiance</h2>
+            <p>The ambiance was warm and welcoming, with traditional decor that created a cozy atmosphere. The setting
+                enhanced the enjoyment of the flavorful meal, making it a memorable experience.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div id="price" class="review-section">
+            <h2>Price</h2>
+            <p>The price was reasonable considering the high quality and generous portion sizes. It offered great value,
+                making it a worthwhile choice for anyone looking to enjoy a hearty meal.</p>
+            <p class="rating">Rating: <span>⭐⭐⭐⭐</span></p>
+        </div>
+
+        <div class="comments-section">
+            <h2>Comments</h2>
+            <input id="name-input" type="text" placeholder="Your Name" />
+            <textarea id="comment-input" placeholder="Leave a comment..."></textarea>
+            <button onclick="addComment()">Submit</button>
+            <ul id="comments-list" class="comments-list"></ul>
+        </div>
+
+        <div class="related-posts">
+            <h2>Related Posts</h2>
+            <ul>
+                <li><a href="https://www.newmalaysiankitchen.com/top-10-food-to-eat-in-kuala-lumpur-malaysia-according-to-a-malaysian-chef/">Top 10 Malaysian Dishes to Try</a></li>
+                <li><a href="https://www.seasonedpioneers.com/a-brief-history-of-beef-rendang/">The History of Nasi Rendang</a></li>
+                <li><a href="https://www.thepeachkitchen.com/2016/08/nasi-lemak-with-beef-rendang/">How to Make Nasi Rendang at Home</a></li>
+            </ul>
+        </div>
+
+        <div class="post-info">
+            Posted July 28, 2024 
+        </div>
+    </div>
+
+    <div class="back-to-top" onclick="scrollToTop()">Back to Top</div>
+
+    <script src="scriptReview.js"></script>
+</body>
+
+</html>

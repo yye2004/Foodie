@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="demolocals.css">
+
+    <title>Chinese Cuisine - Food Blog</title>
+</head>
+
+<header>
+    <nav>
+        <ul>
+            <li><img src="Foodie.png" alt="logo" width="100" height="30"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="food.html">Food</a>
+                <ul class="submenu">
+                    <li><a href="localfood.html">Local</a></li>
+                    <li><a href="overseafood.html">Oversea</a></li>
+                </ul>
+            </li>
+            <li><a href="recipe.html">Recipe</a>
+                <ul class="submenu">
+                    <li><a href="main_dish.html">Main Dish</a></li>
+                    <li><a href="side_dish.html">Side Dish</a></li>
+                    <li><a href="snack.html">Snack</a></li>
+                    <li><a href="dessert.html">Dessert</a></li>
+                    <li><a href="drink.html">Drink</a></li>
+                    <li><a href="soup.html">Soup</a></li>
+                </ul>
+            </li>
+            <li><a href="sponsor.html">Sponsor</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <div class="rightcorner">
+                <a href="contact.html"><img src="contact.png" alt="Contact" width="25" height="25"></a>
+                <a href="login.html"><img src="login.png" alt="Login/Logout" width="25" height="25"></a>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <h1>Chinese Cuisine</h1>
+        <div class="card">
+            <h2>Hainanese Chicken Rice</h2>
+            <img src="img/chicken_rice.jpg" alt="Hainanese Chicken Rice">
+            <div class="rating">Rating: 4.2 <span class="stars">★★★★☆</span></div>
+            <p>MYR 12 - MYR 14</p>
+            <p>Description: Poached chicken served with fragrant rice and chili sauce, a beloved classic.</p>
+            <p>Address: 852 Chicken Road, Kuala Lumpur</p>
+            <a href="https://maps.google.com?q=852 Chicken Road, Kuala Lumpur" target="_blank">View on Google Maps</a>
+            <div class="actions">
+                <button class="like-btn" id="like-hainanese-chicken-rice">👍 <span
+                        id="like-count-hainanese-chicken-rice">110</span> Like</button>
+                <button class="comment-btn" onclick="openModal('hainanese-chicken-rice')">💬 Comments</button>
+                <div class="social-share">
+                    <a href="#" onclick="shareToSocial('facebook', 'Hainanese Chicken Rice')"><img
+                            src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Share on Facebook"></a>
+                    <a href="#" onclick="shareToSocial('twitter', 'Hainanese Chicken Rice')"><img
+                            src="https://img.icons8.com/color/48/000000/twitter.png" alt="Share on Twitter"></a>
+                    <a href="#" onclick="shareToSocial('whatsapp', 'Hainanese Chicken Rice')"><img
+                            src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="Share on WhatsApp"></a>
+                    <a href="https://www.instagram.com/your-profile" target="_blank"><img
+                            src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Share on Instagram"></a>
+                </div>
+            </div>
+            <button class="read-more">READ MORE</button>
+        </div>
+
+        <div id="modal-hainanese-chicken-rice" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('hainanese-chicken-rice')">&times;</span>
+                <h3>Comments for Hainanese Chicken Rice</h3>
+                <form class="comment-form" data-card-id="hainanese-chicken-rice">
+                    <textarea placeholder="Add a comment..."></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <ul class="comments-list" id="comments-hainanese-chicken-rice"></ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Char Kway Teow</h2>
+            <img src="img/kuey_teow.jpg" alt="Char Kway Teow">
+            <div class="rating">Rating: 4.7 <span class="stars">★★★★★</span></div>
+            <p>MYR 11 - MYR 13</p>
+            <p>Description: Stir-fried flat rice noodles with shrimp, Chinese sausage, and eggs, a delicious noodle
+                dish.</p>
+            <p>Address: 963 Noodle Lane, Penang</p>
+            <a href="https://maps.google.com?q=963 Noodle Lane, Penang" target="_blank">View on Google Maps</a>
+            <div class="actions">
+                <button class="like-btn" id="like-char-kway-teow">👍 <span id="like-count-char-kway-teow">110</span>
+                    Like</button>
+                <button class="comment-btn" onclick="openModal('char-kway-teow')">💬 Comments</button>
+                <div class="social-share">
+                    <a href="#" onclick="shareToSocial('facebook', 'Char Kway Teow')"><img
+                            src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Share on Facebook"></a>
+                    <a href="#" onclick="shareToSocial('twitter', 'Char Kway Teow')"><img
+                            src="https://img.icons8.com/color/48/000000/twitter.png" alt="Share on Twitter"></a>
+                    <a href="#" onclick="shareToSocial('whatsapp', 'Char Kway Teow')"><img
+                            src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="Share on WhatsApp"></a>
+                    <a href="https://www.instagram.com/your-profile" target="_blank"><img
+                            src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Share on Instagram"></a>
+                </div>
+            </div>
+            <button class="read-more">READ MORE</button>
+        </div>
+
+        <div id="modal-char-kway-teow" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('char-kway-teow')">&times;</span>
+                <h3>Comments for Char Kway Teow</h3>
+                <form class="comment-form" data-card-id="char-kway-teow">
+                    <textarea placeholder="Add a comment..."></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <ul class="comments-list" id="comments-char-kway-teow"></ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Bak Kut Teh</h2>
+            <img src="img/bakkutteh.jpg" alt="Bak Kut Teh">
+            <div class="rating">Rating: 4.5 <span class="stars">★★★★☆</span></div>
+            <p>MYR 13 - MYR 15</p>
+            <p>Description: Pork rib soup cooked with a blend of herbs and spices, known for its rich flavor.</p>
+            <p>Address: 741 Soup Street, Johor Bahru</p>
+            <a href="https://maps.google.com?q=741 Soup Street, Johor Bahru" target="_blank">View on Google Maps</a>
+            <div class="actions">
+                <button class="like-btn" id="like-bak-kut-teh">👍 <span id="like-count-bak-kut-teh">110</span>
+                    Like</button>
+                <button class="comment-btn" onclick="openModal('bak-kut-teh')">💬 Comments</button>
+                <div class="social-share">
+                    <a href="#" onclick="shareToSocial('facebook', 'Bak Kut Teh')"><img
+                            src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Share on Facebook"></a>
+                    <a href="#" onclick="shareToSocial('twitter', 'Bak Kut Teh')"><img
+                            src="https://img.icons8.com/color/48/000000/twitter.png" alt="Share on Twitter"></a>
+                    <a href="#" onclick="shareToSocial('whatsapp', 'Bak Kut Teh')"><img
+                            src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="Share on WhatsApp"></a>
+                    <a href="https://www.instagram.com/your-profile" target="_blank"><img
+                            src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Share on Instagram"></a>
+                </div>
+            </div>
+            <button class="read-more">READ MORE</button>
+        </div>
+
+        <div id="modal-bak-kut-teh" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('bak-kut-teh')">&times;</span>
+                <h3>Comments for Bak Kut Teh</h3>
+                <form class="comment-form" data-card-id="bak-kut-teh">
+                    <textarea placeholder="Add a comment..."></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <ul class="comments-list" id="comments-bak-kut-teh"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to open a modal
+        function openModal(cardId) {
+            document.getElementById(`modal-${cardId}`).style.display = 'block';
+        }
+
+        // Function to close a modal
+        function closeModal(cardId) {
+            document.getElementById(`modal-${cardId}`).style.display = 'none';
+        }
+
+        // Add event listeners for all comment forms
+        document.querySelectorAll('.comment-form').forEach(form => {
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const cardId = form.getAttribute('data-card-id');
+                const textarea = form.querySelector('textarea');
+                const comment = textarea.value.trim();
+
+                if (comment) {
+                    const commentsList = document.getElementById(`comments-${cardId}`);
+                    const newComment = document.createElement('li');
+                    newComment.textContent = comment;
+                    commentsList.appendChild(newComment);
+
+                    textarea.value = ''; // Clear textarea after submission
+                }
+            });
+        });
+
+        // Add event listeners for all like buttons
+        document.querySelectorAll('.like-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const likeCountSpan = this.querySelector('span');
+                let likeCount = parseInt(likeCountSpan.textContent);
+                likeCountSpan.textContent = likeCount + 1;
+            });
+        });
+
+        // Function to share to social media
+        function shareToSocial(platform, dishName) {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent(`Check out this delicious ${dishName}!`);
+            let shareUrl = '';
+
+            switch (platform) {
+                case 'facebook':
+                    shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${text}`;
+                    break;
+                case 'twitter':
+                    shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+                    break;
+                case 'whatsapp':
+                    shareUrl = `https://wa.me/?text=${text} ${url}`;
+                    break;
+                case 'instagram':
+                    shareUrl = `https://www.instagram.com/your-profile`; // Placeholder URL
+                    break;
+            }
+
+            window.open(shareUrl, '_blank');
+        }
+
+        // Placeholder function for Instagram sharing
+        function shareToInstagram() {
+            alert("Instagram sharing is not directly supported. Please visit our Instagram profile to share.");
+        }
+
+        // Close modal if clicked outside of modal-content
+        window.onclick = function (event) {
+            if (event.target.classList.contains('modal')) {
+                closeModal(event.target.id.split('-')[1]);
+            }
+        }
+
+    </script>
+</body>
+
+</html>
